@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.searh-sec{
+    width: 100vw;
+    height: 40vh;
+    background-color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/landing.jpeg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 20px;
+
+}
+.searh-sec h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.searh-sec p{
+    text-align: center;
+    color: #fff;
+    margin-top: 8px;
+    
+}
+.search{
+    display: flex;
+    background-color: #fff;
+    width: 40vw;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+}
+.search input{
+    width: 90%;
+    outline: none;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+.gallery-sec {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .gallery-sec .images {
+    max-width: 95%;
+    columns: 5 340px; /* 5 columns, each 340px wide */
+    margin: 40px auto; /* Center the gallery */
+    gap: 20px; /* Space between columns */
+  }
+  
+  .gallery-sec .images .card {
+    width: 100%; /* Ensures the image takes the full column width */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Optional styling for the Load More Button */
+  #load-more-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    
+  }
+  
+  #load-more-btn:hover {
+    background-color: #0056b3;
+  }
+  .disabled{
+    cursor: not-allowed;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(237, 237, 237, 0.566); /* Black w/ opacity */
+}
+#modal-image{
+ width: 25vw;
+ /* height: 40vh; */
+ margin-top: 30px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.photographer-info {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+}
+
+#download-link {
+    color: white;
+    text-decoration: none;
+}
+
+#download-link i {
+    margin-right: 5px;
+}
